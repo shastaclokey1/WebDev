@@ -44,4 +44,18 @@ https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML
     file in an <html> tag. Include meta data and search info in the <header> tag. Finally, 
     add all the visible page elements inside the <body> tag.
 
-(2) 
+**Cheat sheet for some useful tags in the slides "Basic Tags" Section 4, Lecture 19.**
+
+[Containers]
+- Div and span are both used to encapsulate sections of an html document.
+- Div is a "block level" element, so it will force the encapsulated content onto a new line.
+- Span is an "in-line" element, so it can be used within blocks of content without breaking flow.
+
+[Elements]
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+- No one needs to memmorize all of the html elements. That's what the reference is for.
+
+[Atributes]
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+- Same story as html elements.
+- Atributes use key/value pairs
