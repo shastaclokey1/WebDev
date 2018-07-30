@@ -1,0 +1,6 @@
+Introduction to HTML
+
+Objectives: (1) Be able to properly structure an HTML document.
+            (2) Understand the difference between closing and self-closing tags.
+            (3) Create a simple HTML document based on a photo provided.
+
