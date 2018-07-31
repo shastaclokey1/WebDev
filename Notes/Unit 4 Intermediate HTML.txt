@@ -1,0 +1,10 @@
+Intermediate HTML
+
+Objectives: (1) Learn how to make and structure HTML tables.
+	    (2) Learn how to use the <form>, <input>, <select>, and <label> tags to 
+                make validated forms.
+
+(1) - Tables contain a <thead> and a <tbody>
+    - The header and body each contain row elements <tr> with embedded row entry elements <th>
+    - Tables are pretty straight forward.
+
