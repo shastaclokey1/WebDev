@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fantastic Forms</title>
+	</head>
+	<body>
+		<h1>Login</h1>
+
+		<!-- action - where the form sends data to -->
+		<!-- method - what HTTP method (get/post) -->
+		<!-- <form>
+			<label>
+				Username:
+				<input type="text" placeholder="username">
+			</label>
+			<label>
+				Password:
+				<input type="password" placeholder="password">
+			</label>
+			<input type="submit">
+		</form> -->
+		<form>
+			<label for="email">Email:</label>
+			<input id="email" type="email" placeholder="email"  required>
+
+			<label for="password">Password:</label>
+			<input id="password" type="password" placeholder="password" required>
+
+			<input type="submit">
+		</form>
+
+		<p>Do you prefer cats or Dogs?</p>
+		<form>
+			<label for="dogs">Dogs:</label>
+			<input name="petChoice" id="dogs" type="radio" value="DOGS">
+
+			<label for="cats">Cats:</label>
+			<input name="petChoice" id="cats" type="radio" value="CATS">
+
+			<p>What's your current mood?</p>
+			<select name="Mood">
+				<option value="happy">:)</option>
+				<option value="meh">:|</option>
+				<option value="sad">:(</option>
+			</select>
+			<textarea name="MoodElaboration" rows="5" cols="30"></textarea>
+			<button>Go!</button>
+		</form>
+	</body>
+</html>
