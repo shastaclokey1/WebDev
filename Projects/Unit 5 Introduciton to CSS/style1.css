@@ -1,0 +1,28 @@
+h1 {
+	color: #900090;
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+
+	border: 5px dashed #900090;
+}
+
+h4 {
+	color: black;
+	background: rgb(255, 140, 60);
+}
+
+body {
+	background: pink;
+	/*background: url(https://forums.autodesk.com/t5/image/serverpage/image-id/359183iE99B918926F5676E?v=1.0);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+li {
+	color: rgb(0, 180, 180);
+}
+
+p {
+	color: rgba(150, 0, 0, .2);
+}
