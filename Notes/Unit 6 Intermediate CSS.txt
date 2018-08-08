@@ -29,3 +29,9 @@ Objectives: (1) Learn how to import fonts to use in our style sheets.
 
 
 * That's all for the concepts! Now time to apply that knowledge to some fun projects.
+
+* Made a tic tac toe board by creating a 3x3 table and giving the vertMiddle and horzMiddle
+  table elements borders on specific sides.
+    - A cool trick I learned is, when specifying multiple classes on an html element, you
+      just leave a space between the two class names.
+    - I also had to use the margin: 0 auto; trick to center the table in the body.
