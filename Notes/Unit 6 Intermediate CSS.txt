@@ -1,0 +1,6 @@
+Intermediate CSS
+
+Objectives: (1) Learn how to import fonts to use in our style sheets.
+	    (2) Expand our reprituar of fonts with the google fonts api.
+	    (3) Learn how to utilize the four components of the "Box Model".
+
