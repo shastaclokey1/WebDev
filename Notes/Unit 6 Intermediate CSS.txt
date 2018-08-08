@@ -4,3 +4,28 @@ Objectives: (1) Learn how to import fonts to use in our style sheets.
 	    (2) Expand our reprituar of fonts with the google fonts api.
 	    (3) Learn how to utilize the four components of the "Box Model".
 
+(1) - The font-family property allows you to set the font to different styles.
+    - Here's a good website to check the compatibility of different fonts. https://www.cssfontstack.com/
+    - The font-size can be set to an absolute pixel size (px) or a relative pixel size (em).
+    - A good practice is to set the foundation pixel size of the whole body, then to relatively
+      size the rest of the content based on that.
+    - Font weight allows you to set the "boldness" of an element.
+    - Line height and text align are pretty self explanatory. 
+    - Text decoration allows you to add underlines, strike throughs, and other fun, well, decorations.
+
+(2) - To embedd custom fonts from the google fonts api, go to fonts.google.com and pick a font,
+      customize it, then coppy the <link> tag on the embed tab and paste it into the <head>
+      of your html document.
+    - The embed tab will also specify the css command to activate this font.
+
+(3) - The box model is the principle we use to position elements on the page.
+    - The idea is that every element has a rectangular box around it.
+    - The content, padding, border and margin can be manipulated for each of these boxes.
+    - The border is the line which defines these boxes.
+    - Padding is the space surrounding the element which separates this content from the border.
+    - Margins create a buffer zone between the border of one box and any other.
+    - When specifying a margin, you can set all four values by using margin: top right bottom left;.
+    - Using auto with margin allows you to center elements on their respective axis.
+
+
+* That's all for the concepts! Now time to apply that knowledge to some fun projects.
