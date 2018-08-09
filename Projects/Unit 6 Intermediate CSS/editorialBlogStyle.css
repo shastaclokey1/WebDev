@@ -27,7 +27,7 @@ hr {
 .date {
 	text-transform: uppercase;
 	color: #3498db;
-	letter-spacing: 2px;
+	letter-spacing: .2rem;
 }
 
 .firstPar {
