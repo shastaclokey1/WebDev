@@ -1,0 +1,36 @@
+/*border color: #bdc3c7
+date color: #3498db
+h2 color: #2c3e50
+font: source sans pro*/
+
+body {
+	width: 50%;
+	border: 20px solid #bdc3c7;
+	margin: 10px auto;
+	padding: 20px;
+	padding-top: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+hr {
+	color: #bdc3c7;
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.date {
+	text-transform: uppercase;
+	color: #3498db;
+	letter-spacing: 2px;
+}
+
+.firstPar {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}

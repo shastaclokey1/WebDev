@@ -44,5 +44,10 @@ Objectives: (1) Learn how to import fonts to use in our style sheets.
       a css img selector, then have at it with the custom spacing.
     - It never hurts to break out a little math when you want to space out elements on a page.
 
+* Made an editorial blog by setting up dynamically sized borders, padding the text content within, 
+  and utilizing custom fonts, weights, and styles to the page content through css stylesheets.
+    - Searching for <hr> tags taught me that you can find people's css custom stylings online. 
+    - You can coppy these styles into your html/css documents to replicate the effects.
+
 
     
