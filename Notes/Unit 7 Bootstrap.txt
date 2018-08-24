@@ -27,5 +27,15 @@ Objectives: (1) Be able to define bootstrap and explain how and why to use it.
       id or whatever, then provide new colors, fonts, margins, borders, etc.
     - All of these bootstrap components are fully detailed in the bootstrap docs. Use the 
       docs as a reference and look up components as you think of new things to add.
-    
-    
+    - The container class is a nice way to center a bootstrap component.
+    - Three helpful bootstrap classes are form-group (adds nice spacing), form-control 
+      (makes the inputs look nice), and form-inline (makes all the inputs of a form inline).
+    - A good way to make a bs component is to take the example bs markup from the docs and tailor
+      it to your exact needs
+
+(4) - The grid system adds structure and layout to a webpage.
+    - It allows you to divide the screen into pieces and decide how much space each element
+      should be allotted.
+    - The grid is divided into 12 equal segments which can be allotted to elements.
+    - Grids can be embedded within other grids by inserting a div with a row class within
+      a div with a col-size-units class.
