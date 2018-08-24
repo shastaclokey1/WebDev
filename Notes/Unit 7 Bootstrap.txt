@@ -39,3 +39,13 @@ Objectives: (1) Be able to define bootstrap and explain how and why to use it.
     - The grid is divided into 12 equal segments which can be allotted to elements.
     - Grids can be embedded within other grids by inserting a div with a row class within
       a div with a col-size-units class.
+
+*Gallery project
+    - I utilized the grid system to uniformly lay images on the page according to the window
+      scale size. 
+    - I used the thumbnail class to "squish" on a <div> tagthe images so they would fit 
+      within the grid dimensions.
+    - I learned to inspect bootstrap elements to see what class specificity is required to 
+      style different attributes like color, background, and so on.
+    - I learned about glyph icons and how to include them using bootstrap's class definitions.
+    - I utilized https://fontawesome.com/ to add in cooler icons. The documentation is sweet.
