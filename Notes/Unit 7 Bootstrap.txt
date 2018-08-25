@@ -49,3 +49,12 @@ Objectives: (1) Be able to define bootstrap and explain how and why to use it.
       style different attributes like color, background, and so on.
     - I learned about glyph icons and how to include them using bootstrap's class definitions.
     - I utilized https://fontawesome.com/ to add in cooler icons. The documentation is sweet.
+
+*Startup Landing Page
+    - I made a startup landing page for the VR In The Bar idea that Trevor, Warren, and Erik came up with.
+    - To make this happen I utilized the bootstrap grid system, navbar generator, button styling engine, 
+      the google fonts api, and unsplash for a background image.
+    - A fun trick I learned was how to add shadows to elements.
+	-- Just add text shadow or box shaddow properties to the selector tags for html elements and 
+           specify the xy offset, the shadow thickness, and the color of the shadow.
+    - Everything else was fairly similar to what I have done before.
