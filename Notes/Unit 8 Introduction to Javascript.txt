@@ -41,3 +41,18 @@ Objectives: (1) Learn to run JS in the chrome developer console.
     - Variables can be reasigned to other values after being instantiated.
     - Varialbe types are "dynamic" so the type can be changed after instantiation.
     - Best practice is to cammelCase JS variables.
+
+(4) - console.log and alert are both ways to display informaiton.
+    - console.log displays to the console.. duh haha.
+    - alert displays to a pop up alert spawned by google chrome.
+    - Prompt is a way to ask the user for an input.
+    - This input can be stored in a variable to be used later.
+    - None of these functions are suitable to be used in produciton sites, but they are good
+      tools to learn JS.
+
+[Including Separate JS Files]
+    - Make a separate .js file with all the JS code you want to run.
+    - Add a <script> tag to the html document that you want to run your JS code.
+    - I have one question. Does it matter whether you include the script tag in the head or body?
+    - Colt says that adding a script tag after the body elements will let the html load first,
+      but I've found that the html always waits to load until all the alerts/prompts complete.
