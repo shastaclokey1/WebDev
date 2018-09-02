@@ -1,0 +1,7 @@
+JS Control Flow
+
+Objectives: (1) Be able to evaluate complex logical expressions.
+	    (2) Write 3-part JS conditional statements.
+	    (3) Learn to use for loops and while loops.
+	    (4) Translate from for loops to while loops and vice versa.
+
