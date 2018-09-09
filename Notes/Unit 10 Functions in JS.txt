@@ -39,3 +39,11 @@ Objectives: (1) Learn to write function declarations and use them with function 
       funciton.
     - This is what it would look like: outsideFunction( function() { code }, secondArgument, thirdArgument);
     - Set interval is a way to execute a specified function over and over at a set interval.
+
+[Building a custom version of array.forEach()]
+    - Because we havent learned about classes and the "." operator yet, we will structure our function
+      with two arguments. myForEach(arr, function)
+    - Remember to pas in the reference name for funcitons, not the funciton itself. i.e. don't add
+      the () to the end of the function name.
+    - I did actually learn a first use case of the . operator. We created a function within the 
+      Array.prototype class and then used it in the console.

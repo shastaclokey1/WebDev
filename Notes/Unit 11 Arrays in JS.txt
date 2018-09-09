@@ -24,4 +24,18 @@ Objectives: (1) Be able to define arrays, add elements, and remove elements.
       the beginning of an array.
     - The array.indexOf(elt) function works the same way as a the similar string funciton. It returns the first
       index at which the given element can be found. It returns -1 if the element is not found in the list.
-    - 
+    - The array.slice(start_index, stop_index) function allows you to extract a sub array starting at the start_index
+      and ending one before the stop_index. The original array is unchanged.
+    - Array iteration allows you to loop through each element in an array and do something to or with each element.
+    - The array.forEach(function(elt) {}) function is much easier to iterate through an array. The funciton can be 
+      inline (Anonymous) or predefined.
+    - The internal function within array.forEach actually can take 3 arguments (element, index, array_ref).
+
+(3) - Used a while loop to repeatedly ask user for input until they decided to quit the app.
+    - Used conditionals to determine which action the user wanted to carry out.
+    - Used array.forEach method to display all the items in the todo list.
+    - Refactored logic within conditional branches into seperate functions to make the control flow more clear.
+    - Used the array.splice method to remove a specified element from the todo list.
+
+*Fun fact, global variables from two separate js files added to the same html source page have the same scope and will
+ clash with eachother.
