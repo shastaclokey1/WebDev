@@ -55,4 +55,9 @@ Tex - The tag.textContent grabs all the text content within a given tag and retu
       This treats inputs as html and will render html formatted text inputs.
     - There are good ways to add or subtract inner elements, but these "text editing" functions
       are not the way you want to do it.
-Elm - 
+Elm - Once you select an element, you can use the elm.setAttribute(atrib, value) command to change attributes.
+    - All of these dom manipulation techniques will work on any element, any attribute and any website.
+    - For instance, you can change the google logo to be any image you want, or change the link hooks to rout to chocolate rain.
+    - A fun way to mess with a ton of elements on a page at the same time is to select all the elements of
+      a given type (say links), store them in an array, then use a for loop to cycle through all the links
+      and set styles, change attributes, or mess with the element text. DOM manipulation is cool!
