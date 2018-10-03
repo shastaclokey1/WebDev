@@ -1,0 +1,7 @@
+.taskComplete {
+	text-decoration: line-through;
+}
+
+.taskFocused {
+	background-color: rgba(0,100,100,2); 
+}
