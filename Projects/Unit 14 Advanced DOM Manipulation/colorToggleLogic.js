@@ -1,8 +1,8 @@
-var body = document.querySelector("body");
-
 document.querySelector("button").addEventListener("click", function() {
-	if (body.style.background == "blue")
-		body.style.background = "white";
+	/*if (document.body.style.background == "blue")
+		document.body.style.background = "white";
 	else
-		body.style.background = "blue";
+		document.body.style.background = "blue";*/
+
+	document.body.classList.toggle("blue");
 });

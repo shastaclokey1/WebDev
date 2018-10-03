@@ -8,4 +8,6 @@ Objectives:
     - We still have to use our basic selectors to get object references to our elements. Then,
       we can add event listeners to those objects.
     - A click listener, "click", can be added to an element to trigger code after a click.
-    - 
+    - All the events you could ever want to use are on the MDN Event reference docs page.
+      https://developer.mozilla.org/en-US/docs/Web/Events
+    
