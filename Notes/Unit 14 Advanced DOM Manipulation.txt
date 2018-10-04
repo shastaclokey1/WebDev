@@ -10,4 +10,8 @@ Objectives:
     - A click listener, "click", can be added to an element to trigger code after a click.
     - All the events you could ever want to use are on the MDN Event reference docs page.
       https://developer.mozilla.org/en-US/docs/Web/Events
+
+* A great way to extract information from web pages is to use querySelectorAll to find all the elements
+  of a specific type or with a specific class/id. We can then access information from these elements, or
+  manipulate their content and attributes.
     
