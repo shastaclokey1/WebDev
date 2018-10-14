@@ -1,82 +1,54 @@
-//get references to all the html elements we need
-var squares = document.querySelectorAll(".square");
-var colorDisplay = document.getElementById("colorDisplay");
-var winMsg = document.querySelector("#winMsg");
+var squares = document.querySelectorAll("#colorBoxes .square");
+var colorDisplay = document.querySelector("h1 #rgbDisplay");
+var winMsg = document.querySelector("#settingsStripe #winMsg");
 var h1 = document.querySelector("h1");
-var resetButton = document.querySelector("#reset");
-var easyButton = document.querySelector("#easy");
-var hardButton = document.querySelector("#hard");
+var resetButton = document.querySelector("#settingsStripe #reset");
+var mode = document.querySelectorAll("#settingsStripe .mode");
 
-//set up global variables we need
 var numColorsHard = 6, numColorsEasy = 3;
 var colorListenersSet = false;
-var isEasy = false;
-
-//initiallize random colors and set up UI
+var easyModeIndex = 0, hardModeIndex = 1;
 var colors, pickedColor;
-initiallizeRandomColors();
-resetGameBoardUI();
 
-//set the click listener on the reset button
+resetGame();
+
 resetButton.addEventListener("click", function() {
-	//re-randomize the colors array and picked color
+	resetGame();
+});
+
+for (var i = 0; i < mode.length; i++) {
+	mode[i].addEventListener("click", function() {
+		for (var i = 0; i < mode.length; i++)
+			mode[i].classList.remove("selected");
+		this.classList.add("selected");
+		resetGame();
+	});
+}
+
+function resetGame() {
 	initiallizeRandomColors();
-
-	//reset the game board UI with the new colors
 	resetGameBoardUI();
-});
-
-//set the click listeners for the easy and hard buttons
-easyButton.addEventListener("click", function() {
-	if (!isEasy) {
-		//set the numColors variable to easy mode
-		isEasy = true;
-
-		//re-initiallize the colors array and picked color
-		initiallizeRandomColors();
-
-		//reset the game board UI with the new colors
-		resetGameBoardUI();
-
-		//switch the selected states of the two difficulty mode buttons and reset h1
-		easyButton.classList.add("selected");
-		hardButton.classList.remove("selected");
-	}
-});
-hardButton.addEventListener("click", function() {
-	if (isEasy) {
-		//set the numColors variable to easy mode
-		isEasy = false;
-
-		//re-initiallize the colors array and picked color
-		initiallizeRandomColors();
-
-		//reset the game board UI with the new colors
-		resetGameBoardUI();
-
-		//switch the selected states of the two difficulty mode buttons
-		hardButton.classList.add("selected");
-		easyButton.classList.remove("selected");
-	}
-});
+}
 
 function resetGameBoardUI() {
-	//reset play button, background color of h1, winText, and colorDisplay
+	resetHeaderAndModes();
+	resetGameBoardColorsAndListeners();
+}
+
+function resetHeaderAndModes() {
 	resetButton.textContent = "New Colors";
-	h1.style.backgroundColor = "#232323";
+	h1.style.backgroundColor = "steelblue";
 	winMsg.textContent = "";
 	colorDisplay.textContent = pickedColor;
+}
 
-	//set up the game board colors/listeners for easy mode
+function resetGameBoardColorsAndListeners() {
 	for (var i = 0; i < squares.length; i++) {
 		if (colors[i]) {
-			//tell the color blocks to show up again when switched to hard mode
 			squares[i].style.display = "block";
 
-			//add initial colors to squares
 			squares[i].style.backgroundColor = colors[i];
 
-			//add click listeners to squares if they have not been added yet
 			if (!colorListenersSet) {
 				squares[i].addEventListener("click", colorListener);
 			}
@@ -85,12 +57,10 @@ function resetGameBoardUI() {
 		}
 		
 	}
-	//record that the listeners have been added to each color block
 	colorListenersSet = true;
 }
 
 function colorListener() {
-	//compare element's color to pickedColor to see if they won
 	if (this.style.backgroundColor === pickedColor) {
 		winMsg.textContent = "You Win!";
 		changeColorsOnWin(this.style.backgroundColor);
@@ -102,15 +72,13 @@ function colorListener() {
 }
 
 function changeColorsOnWin(color) {
-	//change the color of all the squares to the picked color
 	for (var i = 0; i < colors.length; i++)
 		squares[i].style.backgroundColor = color;
-	//change the color of the h1 background
 	h1.style.backgroundColor = color;
 }
 
 function initiallizeRandomColors() {
-	 if (isEasy)
+	 if (mode[easyModeIndex].classList.contains("selected"))
 	 	colors = generateRandomColorsArray(numColorsEasy);
 	 else
 	 	colors = generateRandomColorsArray(numColorsHard);
@@ -118,15 +86,9 @@ function initiallizeRandomColors() {
 }
 
 function generateRandomColorsArray(num) {
-	//make an array
 	var arr = [];
-
-	//add num random colors to array
-	for (var i = 0; i < num; i++) {
+	for (var i = 0; i < num; i++)
 		arr.push(randomRGBColor());
-	}
-
-	//return that array
 	return arr;
 }
 
@@ -138,8 +100,6 @@ function randomRGBColor() {
 }
 
 function pickRandomColorFromArray(colorArray) {
-	//generate a random number between 0 and the highest index in colorsArray
 	var randNum = Math.floor(Math.random() * colorArray.length);
-	//return the element at the random number's index
 	return colorArray[randNum];
 }
