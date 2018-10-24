@@ -1,0 +1,23 @@
+jQuery
+
+Objectives: (1) What is jQuery?
+	    (2) What is a library?
+	    (3) Why would you use jQuery?
+	    (4) Why would you not use jQuery?
+
+(1) - jQuery helps you select, manipulate, and create elements.
+    - It has methods to add event listeners, animate elements, and add effects.
+    - It can even be used to make http requests(AJAX).
+
+(2) - A library is just a bunch of classes and methods that someone created and stuffed into
+      a file that we can include in our code and utilize.
+
+(3) - jQuery can help you keep your code more consise.
+    - It will handle all the cross-browser support you would have to think about otherwise.
+    - AJAx is a realllly handy tool because http requests are kindof a pain.
+    - Lot's of people use jQuery which makes for great tutorials and lots of support forums.
+
+(4) - Vanila js can do everything that jQuery can.
+    - jQuery can be an unnecessarily large dependency if only used for a few things.
+    - Lot's of people are moving away from it.
+
