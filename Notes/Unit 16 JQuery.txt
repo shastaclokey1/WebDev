@@ -28,3 +28,12 @@ Objectives: (1) What is jQuery?
     - This styling function can be used to specify one style and its value, a variable
       storing multiple styles, or an inline object containing style value pairs.
 
+[jQuery Common Methods]
+    - val(), text(), attr(), html(), addClass(), removeClass(), and toggleClass() are
+      all common jQuery methods that I should be comfortable using.
+    - text() works like the vanila js version of "text content" and allows you to view
+      and change allllll the text contained in a tag (even the text in child tags).
+    - html() allows you to read and update all the html contained within a tag
+    - attr(attribute, newVal) can be used as a setter and attr(attribute) is a getter
+    - val() gets the current value of an input or editable field. It is also a setter
+    - The addClass() removeClass() and toggleClass() functions are pretty self explanatory
