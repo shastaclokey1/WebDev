@@ -21,3 +21,10 @@ Objectives: (1) What is jQuery?
     - jQuery can be an unnecessarily large dependency if only used for a few things.
     - Lot's of people are moving away from it.
 
+[jQuery Selectors]
+    - The only selector in jQuery is $("selector")
+    - This selector uses the css selector syntax (. for class, # for id, space for secondary specifier, no prefix for tag)
+    - The .css() function allows you to style the elements you select with $()
+    - This styling function can be used to specify one style and its value, a variable
+      storing multiple styles, or an inline object containing style value pairs.
+
