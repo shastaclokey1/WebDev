@@ -5,3 +5,4 @@ Using Libraries
 	  us minimize our work from roughly 50 lines per animation to less than 5
 
 * Howler.js is another great library for adding sounds to javascript projects.
+	-
