@@ -4,15 +4,47 @@
 		<title>Patatap App</title>
 		<link rel="stylesheet" type="text/css" href="assets/circles.css">
 		<script type="text/javascript" src="paper-full.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.core.min.js"></script>
 		<script type="text/paperscript" canvas="myCanvas">
-			var circleArray = new Array(10);
-			for (var k = 0; k < 10; k++) {
-				circleArray[k] = new Array(10);
-			} 
-			for (var i = 0; i < 10; i++) {
-				for (var j = 0; j < 10; j++) {
-					circleArray[i][j] = new Path.Circle(new Point(i * 50, j * 50), 20);
-					circleArray[i][j].fillColor = 'purple';
+
+			var bubbles = new Howl({
+				src: ['assets/sounds/bubbles.mp3']
+			});
+
+			var clay = new Howl({
+				src: ['assets/sounds/clay.mp3']
+			});
+
+			var circles = [];
+			
+			function onKeyDown(event) {
+
+				var maxPoint = new Point(view.size.width, view.size.height);
+				var randomPoint = Point.random();
+				var point = maxPoint * randomPoint;
+				var newCircle = Path.Circle(point, 500);
+
+				if (event.key === "a") {
+					bubbles.play();
+					newCircle.fillColor = "purple";
+				}
+				else if (event.key === "s") {
+					clay.play();
+					newCircle.fillColor = "blue";
+				}
+				else {
+					newCircle.fillColor = "orange";
+				}
+
+				circles.push(newCircle);
+
+
+			}
+
+			function onFrame(event) {
+				for (var i = 0; i < circles.length; i++) {
+					circles[i].fillColor.hue += 1;
+					circles[i].scale(.9);
 				}
 			}
 		</script>
